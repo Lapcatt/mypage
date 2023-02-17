@@ -7,12 +7,12 @@
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
         crossorigin="anonymous"></script>
 
-    <title>스파르타코딩클럽 | 나만의 웹사이트 만들어보기</title>
+    <title>호석의 좋아하는 영화들</title>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Gowun+Dodum&display=swap');
 
@@ -30,8 +30,8 @@
             flex-direction: column;
             align-items: center;
             justify-content: center;
-
-            background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://movie-phinf.pstatic.net/20210715_95/1626338192428gTnJl_JPEG/movie_image.jpg');
+ 
+            background-color: rgb(166, 49, 7);
             background-position: center;
             background-size: cover;
         }
@@ -77,25 +77,42 @@
             margin-top: 20px;
         }
 
-        .mybtn > button {
+        .mybtn>button {
             margin-right: 10px;
         }
+
     </style>
+    <script>
+        function hey(){
+            alert('안녕하세요!')
+        }
+    </script>
 </head>
 
 <body>
     <div class="mytitle">
-        <h1>내 생애 최고의 영화들!</h1>
-        <button>영화 기록하기</button>
+        <h1>내 생애 최고의 영화들</h1>
+        <button onclick="hey()">영화 기록하기</button>
     </div>
     <div class="mypost">
         <div class="form-floating mb-3">
             <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
-            <label for="floatingInput">영화 URL</label>
+            <label for="floatingInput">영화 제목</label>
+        </div>
+        <div class="input-group mb-3">
+            <label class="input-group-text" for="inputGroupSelect01">별점</label>
+            <select class="form-select" id="inputGroupSelect01">
+                <option selected>-- 선택하기 --</option>
+                <option value="1">⭐</option>
+                <option value="2">⭐⭐</option>
+                <option value="3">⭐⭐⭐</option>
+                <option value="3">⭐⭐⭐⭐</option>
+                <option value="3">⭐⭐⭐⭐⭐</option>
+            </select>
         </div>
         <div class="form-floating">
             <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea"></textarea>
-            <label for="floatingTextarea">코멘트</label>
+            <label for="floatingTextarea">감상평을 적어주세요.</label>
         </div>
         <div class="mybtn">
             <button type="button" class="btn btn-dark">기록하기</button>
@@ -106,49 +123,49 @@
         <div class="row row-cols-1 row-cols-md-4 g-4">
             <div class="col">
                 <div class="card h-100">
-                    <img src="https://movie-phinf.pstatic.net/20210728_221/1627440327667GyoYj_JPEG/movie_image.jpg"
+                    <img src="https://m.media-amazon.com/images/M/MV5BMTA1ODUzMDA3NzFeQTJeQWpwZ15BbWU3MDgxMTYxNTk@._V1_.jpg"
                         class="card-img-top" alt="...">
                     <div class="card-body">
-                        <h5 class="card-title">영화 제목</h5>
-                        <p class="card-text">여기에는 코멘트.</p>
-                        <p>⭐⭐⭐</p>
-                        <p class="mycomment">본인의 의견</p>
+                        <h5 class="card-title">어바웃 타임</h5>
+                        <p class="card-text"></p>
+                        <p>⭐⭐⭐⭐⭐</p>
+                        <p class="mycomment">단연 최고라고 말할 수 있는 내 인생 최고의 영화.</p>
                     </div>
                 </div>
             </div>
             <div class="col">
                 <div class="card h-100">
-                    <img src="https://movie-phinf.pstatic.net/20210728_221/1627440327667GyoYj_JPEG/movie_image.jpg"
+                    <img src="https://m.media-amazon.com/images/M/MV5BMTc5MDE2ODcwNV5BMl5BanBnXkFtZTgwMzI2NzQ2NzM@._V1_.jpg"
                         class="card-img-top" alt="...">
                     <div class="card-body">
-                        <h5 class="card-title">영화 제목</h5>
-                        <p class="card-text">여기에는 코멘트.</p>
-                        <p>⭐⭐⭐</p>
-                        <p class="mycomment">본인의 의견</p>
+                        <h5 class="card-title">어벤져스 엔드게임</h5>
+                        <p class="card-text"></p>
+                        <p>⭐⭐⭐⭐⭐</p>
+                        <p class="mycomment">I love you 3000.</p>
                     </div>
                 </div>
             </div>
             <div class="col">
                 <div class="card h-100">
-                    <img src="https://movie-phinf.pstatic.net/20210728_221/1627440327667GyoYj_JPEG/movie_image.jpg"
+                    <img src="https://m.media-amazon.com/images/M/MV5BOTczZWI0YmItODhmZS00NmFiLTg2ZTgtNTMyNWQ1OTE0NTAxXkEyXkFqcGdeQXVyMzU3MTc5OTE@._V1_.jpg"
                         class="card-img-top" alt="...">
                     <div class="card-body">
-                        <h5 class="card-title">영화 제목</h5>
-                        <p class="card-text">여기에는 코멘트.</p>
-                        <p>⭐⭐⭐</p>
-                        <p class="mycomment">본인의 의견</p>
+                        <h5 class="card-title">레미제라블</h5>
+                        <p class="card-text"></p>
+                        <p>⭐⭐⭐⭐</p>
+                        <p class="mycomment">뮤지컬 영화는 재미없다는 나의 편견을 깨준 영화.</p>
                     </div>
                 </div>
             </div>
             <div class="col">
                 <div class="card h-100">
-                    <img src="https://movie-phinf.pstatic.net/20210728_221/1627440327667GyoYj_JPEG/movie_image.jpg"
+                    <img src="https://m.media-amazon.com/images/M/MV5BNGYyNmI3M2YtNzYzZS00OTViLTkxYjAtZDIyZmE1Y2U1ZmQ2XkEyXkFqcGdeQXVyMTA4NjE0NjEy._V1_.jpg"
                         class="card-img-top" alt="...">
                     <div class="card-body">
-                        <h5 class="card-title">영화 제목</h5>
-                        <p class="card-text">여기에는 코멘트.</p>
-                        <p>⭐⭐⭐</p>
-                        <p class="mycomment">본인의 의견</p>
+                        <h5 class="card-title">너의 이름은</h5>
+                        <p class="card-text"></p>
+                        <p>⭐⭐⭐⭐⭐</p>
+                        <p class="mycomment">애니메이션으로 이런 느낌이 들 수 있구나를 깨닫게 해준 영화.</p>
                     </div>
                 </div>
             </div>
